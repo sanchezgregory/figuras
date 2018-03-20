@@ -1,0 +1,5 @@
+docker build -f Dockerfile -t figures .
+
+docker run --name figures -p 8080:80 -d figures
+
+http://localhost:8080/doFigures.php
